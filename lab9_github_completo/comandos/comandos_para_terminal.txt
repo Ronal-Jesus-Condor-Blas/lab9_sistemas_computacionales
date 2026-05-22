@@ -1,0 +1,49 @@
+# Ejercicio 1
+pwd
+cd /
+pwd
+cd ~
+mkdir -p practica_linux/laboratorio/archivos
+cd practica_linux/laboratorio/archivos
+
+# Ejercicio 2
+echo "Sistemas Computacionales" > sistema.txt
+echo "Tercer Semestre" > semestre.txt
+cat sistema.txt semestre.txt > resumen.txt
+less resumen.txt
+mv resumen.txt .resumen.txt
+ls
+ls -a
+
+# Ejercicio 3
+cat /etc/shadow
+sudo cat /etc/shadow
+echo "El uso de sudo limita el tiempo de exposición de privilegios administrativos, restringe las acciones según el usuario y evita errores accidentales que podrían ocurrir si se mantiene una sesión permanente como root." >> seguridad.txt
+
+# Ejercicio 4
+cd ~/practica_linux
+nano info_entorno.sh
+chmod +x info_entorno.sh
+./info_entorno.sh
+
+# Ejercicio 5
+cd ~
+mkdir practica
+cd practica
+pwd
+echo "COMANDO1: touch"
+touch archivo_prueba.txt
+ls
+echo "COMANDO 2: cp"
+echo "Contenido de prueba" > archivo_prueba.txt
+cp archivo_prueba.txt copia_archivo.txt
+ls
+echo -e "Linea 1\nLinea 2\nLinea 3\nLinea 4\nLinea 5" > datos.txt
+head datos.txt
+tail datos.txt
+wc datos.txt
+grep "Linea 3" datos.txt
+find . -name "*.txt"
+date
+whoami
+uname -a
